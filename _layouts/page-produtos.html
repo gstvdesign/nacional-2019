@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h1 class="page-category">{{ page.title }}</h1>
+
+<div class="produtos-list">
+	{% for produtos in site.produtos %}
+	{% if produtos.category contains page.title %}
+	<div class="produtos-content_item">
+	  <h3>{{ produtos.title }}</h3>
+		<img src="{{ produtos.img }}" alt="">    
+	    <p><a href="{{ produtos.url }}">Mais informações</a></p>
+	</div>
+	{% endif %}
+	{% endfor %}
+</div>
+
+<div class="page-footer">
+	
+</div>

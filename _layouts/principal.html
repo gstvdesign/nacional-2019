@@ -1,0 +1,55 @@
+{% include head.html %}
+{% include header.html %}
+
+<div class="principal-main">
+	<div class="principal-content">
+		<a href="/produtos-salas/">
+			<div class="principal-produtos">
+			<h2>Salas</h2>
+			<img src="../img/icon-Salas.png" alt="">
+		</div>
+		</a>
+		
+		<a href="/produtos-complementos/">
+			<div class="principal-produtos">
+			<h2>Complementos</h2>
+			<img src="../img/icon-Complementos.png" alt="">
+		</div>
+		</a>
+		
+		<a href="/produtos-racks/">
+			<div class="principal-produtos">
+			<h2>Racks</h2>
+			<img src="../img/icon-Racks.png" alt="">
+		</div>
+		</a>
+		
+		<a href="/produtos-cadeiras/">
+			<div class="principal-produtos">
+			<h2>Cadeiras</h2>
+			<img src="../img/icon-Cadeiras.png" alt="">
+		</div>
+		</a>
+	</div>
+</div>
+
+
+{% for post in site.posts limit:1 %}
+	<div class="main">
+		<div class="main-content">
+			<h1 class="page-category">{{ post.category }}</h1>
+			
+			<div class="page-header">
+				<h1 class="page-title"> {{ post.title }}</h1>
+				<img src="{{ post.img }}" alt="">
+			</div>
+			
+			<div class="post-content">
+				{{ post.content | strip_html | truncatewords: 80  }}
+				<p><a class="button" href="{{ post.url }}">Continuar lendo</a></p>
+			</div>
+		</div>
+	</div>
+{% endfor %}
+
+{% include footer.html %}

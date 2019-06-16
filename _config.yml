@@ -1,0 +1,21 @@
+title: Nacional Móveis
+description: >
+  Encante-se
+
+baseurl: "" 
+url: "https://nacional-2019.netlify.com/" 
+
+collections:
+  acabamentos:
+    output: true
+  produtos:
+    output: true
+    permalink: /produtos/:path/
+  posts:
+    output: true
+
+
+permalink: pretty
+
+# Build settings
+markdown: kramdown
