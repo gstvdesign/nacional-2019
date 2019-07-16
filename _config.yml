@@ -5,6 +5,9 @@ description: >
 baseurl: "" 
 url: "https://nacional-2019.netlify.com/" 
 
+favicon: "/img/favicon.png"
+img: "/img/"
+
 collections:
   acabamentos:
     output: true
