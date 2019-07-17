@@ -3,8 +3,10 @@ layout: default
 ---
 
 <div class="produtos-category">
-	<h1 class="page-category">{{ page.category }}</h1>
-	<img src="../img/icon-{{ page.category }}.png" alt="">
+	<a class="icon-link" href="/produtos-{{ page.category }}/">
+		<h1 class="page-category">{{ page.category }}</h1>
+		<img src="../img/icon-{{ page.category }}.png" alt="">
+	</a>
 </div>
 
 <div class="page-header">
