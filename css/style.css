@@ -278,6 +278,11 @@ p.top {
 	font-size: 1.4rem;
 }
 
+.produtos-cadeiras {
+	max-height: 362px;
+	margin-top: 1rem;
+}
+
 /* Página de produtos */
 
 .produtos-list {

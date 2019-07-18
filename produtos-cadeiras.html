@@ -1,5 +1,15 @@
 ---
 title: Cadeiras
-layout: page-produtos
+layout: page
 permalink: /produtos-cadeiras/
 ---
+
+<div class="produtos-list">
+	{% for chair in site.data.chairs %}
+	<div class="produtos-content_item">
+	  <h3>{{ chair.title }}</h3>
+		<img class="produtos-cadeiras" src="{{ site.img}}cadeiras/{{ chair.img }}" alt="">    
+	  <p>{{ chair.size }}</p>
+	</div>
+	{% endfor %}
+</div>
