@@ -1,7 +1,7 @@
 ---
 title: Elegância e simplicidade com a nova linha Área
 layout: post
-img: ../img/complementos/area/linha-area.jpg
+img: ../img/complementos/area.jpg
 category: Destaques
 permalink: /nova-area/
 ---
