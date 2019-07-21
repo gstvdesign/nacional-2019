@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-
-<h1 class="page-category">{{ page.title }}</h1>
+<div class="produtos-category">
+	<h1 class="page-category">{{ page.title }}</h1>
+	<img src="../img/icon-{{ page.title }}.png" alt="">
+</div>
 
 <div class="produtos-list">
 	{% for produtos in site.produtos %}
