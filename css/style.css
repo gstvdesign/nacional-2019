@@ -164,7 +164,7 @@ input[type="checkbox"]:checked + .header_produtos-items {
 	font-weight: 900;
 	font-size: 1.4rem;
 	display: flex;
-	align-items: center;
+	
 }
 
 .page-category_back {
@@ -217,6 +217,10 @@ h1.page-title {
 
 .page-content, .produtos-list  {
 	grid-column: 3/-1;
+}
+
+.produtos-list_acab {
+	grid-column: 1/-1;
 }
 
 /* Produtos specific */
@@ -386,4 +390,15 @@ footer {
 	text-align: center;
 	padding: 1rem 0;
 	margin-top: 3rem;
+}
+
+/* Page Transition*/
+
+..transition-fade {
+  transition: 3s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
 }

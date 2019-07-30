@@ -1,55 +1,54 @@
 {% include head.html %}
 {% include header.html %}
 
-<div class="principal-main">
-	<div class="principal-content">
-		<a href="/produtos-salas/">
-			<div class="principal-produtos">
-			<h2>Salas</h2>
-			<img src="{{ site.img }}icon-Salas.png" alt="">
-		</div>
-		</a>
-		
-		<a href="/produtos-complementos/">
-			<div class="principal-produtos">
-			<h2>Complementos</h2>
-			<img src="{{ site.img }}icon-Complementos.png" alt="">
-		</div>
-		</a>
-		
-		<a href="/produtos-estofados/">
-			<div class="principal-produtos">
-			<h2>Estofados</h2>
-			<img src="{{ site.img }}icon-Estofados.png" alt="">
-		</div>
-		</a>
-		
-		<a href="/produtos-cadeiras/">
-			<div class="principal-produtos">
-			<h2>Cadeiras</h2>
-			<img src="{{ site.img }}icon-Cadeiras.png" alt="">
-		</div>
-		</a>
-	</div>
-</div>
-
-
-{% for post in site.posts limit:1 %}
-	<div class="main">
-		<div class="main-content">
-			<h1 class="page-category">{{ post.category }}</h1>
-			
-			<div class="page-header">
-				<h1 class="page-title"> {{ post.title }}</h1>
-				<img src="{{ post.img }}" alt="">
+<div id="swupBody swup" class="transition-fade"><div class="principal-main">
+		<div class="principal-content">
+			<a href="/produtos-salas/">
+				<div class="principal-produtos">
+				<h2>Salas</h2>
+				<img src="{{ site.img }}icon-Salas.png" alt="">
 			</div>
+			</a>
 			
-			<div class="post-content">
-				<p class="post-content_bottom">{{ post.content | strip_html | truncatewords: 80  }}</p>
-				<p><a class="button" href="{{ post.url }}">Continuar lendo</a></p>
+			<a href="/produtos-complementos/">
+				<div class="principal-produtos">
+				<h2>Complementos</h2>
+				<img src="{{ site.img }}icon-Complementos.png" alt="">
 			</div>
+			</a>
+			
+			<a href="/produtos-estofados/">
+				<div class="principal-produtos">
+				<h2>Estofados</h2>
+				<img src="{{ site.img }}icon-Estofados.png" alt="">
+			</div>
+			</a>
+			
+			<a href="/produtos-cadeiras/">
+				<div class="principal-produtos">
+				<h2>Cadeiras</h2>
+				<img src="{{ site.img }}icon-Cadeiras.png" alt="">
+			</div>
+			</a>
 		</div>
 	</div>
-{% endfor %}
-
+	
+	
+	{% for post in site.posts limit:1 %}
+		<div class="main">
+			<div class="main-content">
+				<h1 class="page-category">{{ post.category }}</h1>
+				
+				<div class="page-header">
+					<h1 class="page-title"> {{ post.title }}</h1>
+					<img src="{{ post.img }}" alt="">
+				</div>
+				
+				<div class="post-content">
+					<p class="post-content_bottom">{{ post.content | strip_html | truncatewords: 80  }}</p>
+					<p><a class="button" href="{{ post.url }}">Continuar lendo</a></p>
+				</div>
+			</div>
+		</div>
+	{% endfor %}</div>
 {% include footer.html %}
