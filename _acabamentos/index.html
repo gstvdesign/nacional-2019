@@ -1,4 +1,15 @@
 ---
-title: Acabamentos
+title: Acabamentos & Tecidos
 layout: page
+permalink: /acabamentos/
 ---
+
+<div class="produtos-list">
+	{% for acab in site.data.acab %}
+	<div class="produtos-content_item">
+	  <h3>{{ acab.title }}</h3>
+		<img class="produtos-cadeiras" src="{{ site.img}}acabamentos/{{ acab.img }}" alt="">    
+	  <p>{{ acab.info }}</p>
+	</div>
+	{% endfor %}
+</div>
