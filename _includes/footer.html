@@ -5,3 +5,20 @@
 
 <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  	
 <script>const swup = new Swup(); </script>
+
+{% if page.layout == 'produtos' %}
+  <script src="{{ site.url }}/js/tingle.min.js"></script>
+  <script type="text/javascript">
+
+    /* Modal big */
+
+    var modalBigContent = new tingle.modal();
+    var btn3 = document.querySelector('.modal');
+    btn3.addEventListener('click', function(){
+        modalBigContent.open();
+    });
+    modalBigContent.setContent(document.querySelector('.modal-content').innerHTML);
+
+    
+  </script>
+{% endif %}

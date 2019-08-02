@@ -1,0 +1,31 @@
+<button class="produtos-cta modal">Quero saber mais sobre {{ page.title }}</button>
+
+<div class="modal-content">
+
+<h3 class="produtos-description">Deixe seu nome e email para que possamos passar mais informações sobre {{ page.title }}.</h3>
+<form class="formulario" action="https://getsimpleform.com/messages?form_api_token=9391fba423678a18de7abfc88e0d4317" method="post">
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <input type='hidden' name='redirect_to' value='{{ site.url }}//thanks/' />
+  
+  <!-- all your input fields here.... -->
+  <p>
+    <label for="name">Meu nome é</label>
+    <input type='text' name="name" id="name" placeholder="João Silva" required/>
+  </p>
+
+  <p>
+    <label for="email">Meu email é</label>
+    <input type="email" name="email" id="email" placeholder="meu@mail.com" required>
+  </p>
+
+  <p>
+  	<label for="empresa">Trabalho na</label>
+  	<input type="text" name="empresa" id="empresa" placeholder="Nome da loja" required>
+  </p>
+
+  <input type="hidden" name="produto" value="{{ page.title }}">
+
+  <input type='submit' class="produtos-cta" value='Tenho interesse na {{ page.title }}' />
+</form>
+
+</div>
