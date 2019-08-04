@@ -223,8 +223,15 @@ h1.page-title {
 	grid-column: 3/-1;
 }
 
-.produtos-list_acab {
+.acab-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+
+.acab-list > h2 {
 	grid-column: 1/-1;
+	font-size: 2rem;
 }
 
 /* Produtos specific */
@@ -243,7 +250,7 @@ a.icon-link {
 }
 
 .produtos-content {
-	grid-column: 1/-1;
+	grid-column: 3/-1;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 2rem;
@@ -401,7 +408,7 @@ input[type=text]:focus, input[type=email]:focus {
 	grid-gap: 1rem;
 }
 
-.produtos-content_item {
+.produtos-content_item, .acab-content_item {
 	border-bottom: var(--border);
 	padding-bottom: 1rem;
 }
@@ -420,6 +427,11 @@ input[type=text]:focus, input[type=email]:focus {
 .produtos-content_item > p > a:hover {
 	color: var(--cinza);
 	border-bottom: 1px solid var(--cinza);
+}
+
+.acab-content_item > h3 {
+	font-size: 1.2rem;
+	margin-bottom: .5rem;
 }
 
 /* Footer */

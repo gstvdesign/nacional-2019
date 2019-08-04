@@ -4,43 +4,56 @@ layout: page
 permalink: /acabamentos/
 ---
 
-<div class="produtos-list">
-	<h2 class="produtos-list_acab">Acabamentos</h2>
+<div class="acab-list">
+	<h2>Acabamentos</h2>
 
 	{% for acab in site.data.acab %}
 	{% if acab.cat contains "acab" %}
 	
-	<div class="produtos-content_item">
+	<div class="acab-content_item">
 	  <h3>{{ acab.title }}</h3>
-	  <p>{{ acab.info }}</p>
-		<img class="produtos-cadeiras" src="{{ site.img}}acabamentos/{{ acab.img }}" alt="">    
+		<img src="{{ site.img}}acabamentos/{{ acab.img }}" alt="">    
 	</div>
 	
 	{% endif %}
 	{% endfor %}
 
-	<h2 class="produtos-list_acab">Vidro ou Laca</h2>
+	<h2>Lâmina</h2>
+
+	{% for acab in site.data.acab %}
+	{% if acab.cat contains "lamina" %}
+	
+	<div class="acab-content_item">
+	  <h3>{{ acab.title }}</h3>
+	  <p>{{ acab.info }}</p>
+		<img src="{{ site.img}}acabamentos/{{ acab.img }}" alt="">    
+	</div>
+	
+	{% endif %}
+	{% endfor %}
+
+	<h2>Vidro ou Laca</h2>
 
 	{% for acab in site.data.acab %}
 	{% if acab.cat contains "vidro" %}
 	
-	<div class="produtos-content_item">
+	<div class="acab-content_item">
 	  <h3>{{ acab.title }}</h3>
-		<img class="produtos-cadeiras" src="{{ site.img}}acabamentos/{{ acab.img }}" alt="">    
+		<img src="{{ site.img}}acabamentos/{{ acab.img }}" alt="">    
 	</div>
 	
 	{% endif %}
 	{% endfor %}
 
-	<h2 class="produtos-list_acab">Tecidos</h2>
+	<h2>Tecidos</h2>
 
 	{% for acab in site.data.acab %}
 	{% if acab.cat contains "tecido" %}
 	
-	<div class="produtos-content_item">
+	<div class="acab-content_item">
 	  <h3>{{ acab.title }}</h3>
 	  <p>{{ acab.info }}</p>
-		<img class="produtos-cadeiras" src="{{ site.img}}acabamentos/{{ acab.img }}" alt="">    
+		<img src="{{ site.img}}acabamentos/{{ acab.img }}" alt="">    
 	</div>
 	
 	{% endif %}
