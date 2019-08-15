@@ -14,7 +14,7 @@ A linha é bem grande e versatil. Pode ser usada em vários ambientes, na sua sa
 
 A linha Amores tem bancos de 1 a 3 lugares, banquetas, sofá de dois lugares, mesa bistrô e a poltrona que abre esse texto.
 
-![../img/complementos/amores-ban-amb.jpg]
+![](../img/complementos/amores-ban-amb.jpg)
 
 Toda a linha amores está disponível nos três acabamentos da Nacional: Amêndoa, Capuccino e Pinhão. A mesa vem com duas opções de tampo: vidro preto e fendi claro.
 
