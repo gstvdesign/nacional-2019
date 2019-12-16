@@ -64,4 +64,12 @@
     .principal-produtos {
         width: auto;
     }
+
+    .acab-list{
+        grid-template-columns: repeat(2, 45%);
+    }
+
+    .full {
+        grid-column: 1/-1;
+    }
 }
